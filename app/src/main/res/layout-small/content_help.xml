@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="it.controller.voice.voicecontroller.HelpActivity"
+    tools:showIn="@layout/activity_help">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/TVi"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60sp"
+            android:text="Istruzioni:" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text= "Prima di procedere assicurarsi di avere installato sul proprio dispositivo il riconoscitore vocale di Google, altrimenti accedere al AppStore al seguente link:"
+            android:id="@+id/TVistruzione"
+            android:layout_below="@+id/TVi"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20sp"
+            />
+
+        <TextView
+            android:id="@+id/tvlink"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="https://play.google.com/store"
+            android:autoLink="web"
+            android:layout_below="@+id/TVistruzione"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#0535f4"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text= "Per poter iniziare ad usare l'applicazione premete sul microfono, riportato nell'immagine:"
+            android:id="@+id/TVi2"
+            android:layout_below="@+id/tvlink"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10sp"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/mic"
+            android:layout_below="@+id/TVi2"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/imageMic"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text= "Successivamente pronunciare il comando desiderato. Di seguito si riporta la lista di comani riconosciuti."
+            android:id="@+id/TVi3"
+            android:layout_below="@+id/imageMic"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20sp" />
+
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="30sp"
+            android:background="@color/colorPrimary"
+            android:id="@+id/view"
+            android:layout_marginTop="40dp"
+            android:layout_below="@+id/TVi3"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/textview"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60sp"
+            android:layout_below="@+id/view"
+            android:text="Comandi:"        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text= "Alzare il volume: alza volume"
+            android:id="@+id/TV"
+            android:layout_below="@+id/textview"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text= "Abbassare il volume: abbassa volume"
+            android:id="@+id/TV1"
+            android:layout_below="@+id/TV"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="14sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text= "Canale successivo: canale successivo"
+            android:id="@+id/TV2"
+            android:layout_below="@+id/TV1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="14sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text= "Canale precedente: canale precedente"
+            android:id="@+id/TV3"
+            android:layout_below="@+id/TV2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="14sp" />
+
+
+
+
+
+
+    </RelativeLayout>
+</ScrollView>

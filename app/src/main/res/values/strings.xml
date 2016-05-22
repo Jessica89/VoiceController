@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Voice Controller</string>
+    <string name="action_help">Help</string>
+    <string name="emptystring"> </string>
+    <string name="speech_prompt">Say something&#8230;</string>
+    <string name="speech_not_supported">Sorry! Your device doesn\'t support speech input</string>
+    <string name="speech_it">La lingua impostata e\' Italiano</string>
+    <string name="speech_uk">Your device is set to English UK</string>
+    <string name="text_help">Help Clicked</string>
+    <string name="title_activity_help">Help</string>
+
+</resources>
